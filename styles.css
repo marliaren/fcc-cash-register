@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+:root {
+  --bgcolor: #0a0a23;
+  --registercolor: #56566a;
+}
+
+body {
+  background-color: var(--bgcolor);
+  width: 100%;
+  height: 100vh;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding: 60px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+label,
+input,
+button,
+span,
+p,
+#change-due,
+#cash-in-drawer,
+#total-change,
+.cashregister-btn {
+  font-size: 1.5rem;
+}
+
+#cash {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 20px;
+}
+
+button {
+  border-radius: 20px;
+  padding: 10px 30px;
+  border: none;
+  background-color: #ffaaaa;
+  cursor: pointer;
+}
+
+#total-change {
+  margin-top: 20px;
+}
+
+input,
+button,
+#change-due,
+.total {
+  width: 250px;
+}
+
+#change-due {
+  margin-top: 15px;
+  border: 2px solid var(--registercolor);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.total {
+  margin-top: 25px;
+  background-color: var(--registercolor);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.totalbox {
+  background-color: var(--bgcolor);
+  padding: 5px 0;
+  width: 230px;
+  border-radius: 3px;
+}
+
+.totalparag {
+  text-align: center;
+}
+
+#price {
+  margin-top: 5px;
+  width: 80%;
+  background-color: var(--bgcolor);
+  border: 1px solid #2e2e2e;
+  color: white;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.total-underbox {
+  width: 50px;
+  background-color: var(--registercolor);
+  height: 35px;
+  margin-right: 100px;
+}
+
+.cashregister-body,
+.cashregister-drawer {
+  width: 360px;
+}
+
+.cashregister-body {
+  height: 260px;
+  background-color: var(--registercolor);
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  padding: 20px;
+}
+
+.cashregister-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.cashregister-btns {
+  display: grid;
+  grid-template-columns: repeat(4, 30px);
+  grid-template-rows: repeat(4, 30px);
+}
+
+.cashregister-btn,
+.cashregister-btn-bottom {
+  height: 25px;
+  border-radius: 3px;
+  background-color: var(--bgcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cashregister-btn {
+  width: 25px;
+}
+
+.cashregister-btns-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cashregister-btn-bottom {
+  width: 35px;
+}
+
+.cid-box {
+  background-color: var(--bgcolor);
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.cid-title {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+#cash-in-drawer {
+  line-height: 2rem;
+}
+
+.cashregister-drawer {
+  margin-top: 10px;
+  padding: 10px 0;
+  background-color: var(--registercolor);
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cashregister-drawer-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: var(--bgcolor);
+}

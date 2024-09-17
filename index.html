@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Cash Register</h1>
+      <div class="input">
+        <label for="cash">Enter cash: </label>
+        <input type="text" id="cash" />
+        <button id="purchase-btn">Purchase</button>
+      </div>
+
+      <div id="total-change"></div>
+
+      <div id="change-due"></div>
+      <div class="total">
+        <div class="totalbox">
+          <!-- <p class="totalparag">Total Price: $<span id="price"></span></p> -->
+
+          <!-- dynamic input of price -->
+          <p class="totalparag">
+            Total Price: <br />
+            $ &nbsp;<input
+              type="text"
+              id="price"
+              placeholder="Input price here"
+            />
+          </p>
+        </div>
+      </div>
+
+      <div class="total-underbox"></div>
+      <div class="cashregister-body">
+        <div class="cashregister-left">
+          <div class="cashregister-btns">
+            <div class="cashregister-btn">7</div>
+            <div class="cashregister-btn">8</div>
+            <div class="cashregister-btn">9</div>
+            <div class="cashregister-btn">÷</div>
+            <div class="cashregister-btn">4</div>
+            <div class="cashregister-btn">5</div>
+            <div class="cashregister-btn">6</div>
+            <div class="cashregister-btn">x</div>
+            <div class="cashregister-btn">1</div>
+            <div class="cashregister-btn">2</div>
+            <div class="cashregister-btn">3</div>
+            <div class="cashregister-btn">+</div>
+            <div class="cashregister-btn">0</div>
+            <div class="cashregister-btn">.</div>
+            <div class="cashregister-btn">=</div>
+            <div class="cashregister-btn">-</div>
+          </div>
+
+          <div class="cashregister-btns-bottom">
+            <div class="cashregister-btn-bottom">CLEAR</div>
+            <div class="cashregister-btn-bottom">ON/OFF</div>
+            <div class="cashregister-btn-bottom">OPEN</div>
+          </div>
+        </div>
+
+        <div class="cashregister-right">
+          <div class="cid-box">
+            <p class="cid-title">Change in drawer:</p>
+            <!-- <p class="cid-money">
+              Pennies: $<span id="pennies-span" class="cid-span"></span>
+            </p>
+            <p class="cid-money">
+              Nickels: $<span id="nickels-span" class="cid-span"></span>
+            </p>
+            <p class="cid-money">
+              Dimes: $<span id="dimes-span" class="cid-span"></span>
+            </p>
+            <p class="cid-money">
+              Quarters: $<span id="quarters-span" class="cid-span"></span>
+            </p>
+            <p class="cid-money">
+              Ones: $<span id="ones-span" class="cid-span"></span>
+            </p>
+            <p class="cid-money">
+              Fives: $<span id="fives-span" class="cid-span"></span>
+            </p>
+            <p class="cid-money">
+              Tens: $<span id="tens-span" class="cid-span"></span>
+            </p>
+            <p class="cid-money">
+              Twenties: $<span id="twenties-span" class="cid-span"></span>
+            </p>
+            <p class="cid-money">
+              Hundreds: $<span id="hundreds-span" class="cid-span"></span>
+            </p> -->
+            <div id="cash-in-drawer"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cashregister-drawer">
+        <div class="cashregister-drawer-circle"></div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
